@@ -15,8 +15,7 @@ This is the header validation that runs before an endpoint's method is hit. (ret
 > _It is important to note here, that we write to the response object before returning false to set the response that the user will receive._
 
 
-> _Also, `parseClientCredentials()` could use the `request.getHeader()`. However, using the `request.getHeaders()` allows you to support multiple Authorization headers. (eg: a Basic client token, and an oauth Bearer token.)
-> Since`request.getHeader()` just grabs the first header that matches.
+> Also, `parseClientCredentials()` could use the `request.getHeader()`. However, using the `request.getHeaders()` allows you to support multiple Authorization headers. _(eg: a Basic client token, and an oauth Bearer token.)_ Since`request.getHeader()` just grabs the first header that matches.
 
 ### `Properties.class`
 Here we read the clientId and clientSecret from a properties file. So that the values are configurable.
