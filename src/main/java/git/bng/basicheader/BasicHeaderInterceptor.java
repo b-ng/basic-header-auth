@@ -61,16 +61,6 @@ public class BasicHeaderInterceptor extends HandlerInterceptorAdapter {
         response.getWriter().write(objectMapper.writeValueAsString(new Error(message)));
     }
 
-    private class ClientCredentials {
-        final String clientId;
-        final String clientSecret;
-
-        public ClientCredentials(String clientId, String clientSecret) {
-            this.clientId = clientId;
-            this.clientSecret = clientSecret;
-        }
-    }
-
     private class Error {
         private final HttpStatus status = HttpStatus.UNAUTHORIZED;
         private final String message;
