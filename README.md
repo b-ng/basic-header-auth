@@ -8,7 +8,7 @@ In this case the Interceptor is used because the api is intentionally stateless.
 
 
 ### `Api.class`
-This is the endpoints to be accessed by the client.
+This is the REST controller.
 
 ### `BasicHeaderInterceptor.class`
 This is the header validation that runs before an endpoint's method is hit. (returns true to continue, false to abort.)
