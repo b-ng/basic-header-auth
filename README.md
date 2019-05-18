@@ -12,6 +12,7 @@ This is the endpoints to be accessed by the client.
 
 ### `BasicHeaderInterceptor.class`
 This is the header validation that runs before an endpoint's method is hit. (returns true to continue, false to abort.)
+> _It is important to note here, that we write to the response object before returning false to set the response that the user will receive._
 
 ### `Properties.class`
 Here we read the clientId and clientSecret from a properties file. So that the values are configurable.
