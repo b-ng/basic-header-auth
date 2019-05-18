@@ -3,4 +3,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'basicheader'
+rootProject.name = 'basic-header-auth'
