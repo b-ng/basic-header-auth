@@ -13,6 +13,8 @@ This is the endpoints to be accessed by the client.
 ### `BasicHeaderInterceptor.class`
 This is the header validation that runs before an endpoint's method is hit. (returns true to continue, false to abort.)
 > _It is important to note here, that we write to the response object before returning false to set the response that the user will receive._
+
+
 > _Also, `parseClientCredentials()` could use the `request.getHeader()`. However, using the `request.getHeaders()` allows you to support multiple Authorization headers. (eg: a Basic client token, and an oauth Bearer token.)
 > Since`request.getHeader()` just grabs the first header that matches.
 
